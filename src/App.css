@@ -1,0 +1,481 @@
+/*
+font-family: 'Cormorant', serif;
+font-family: 'Josefin Slab', serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Spectral', serif;
+
+Color Palette
+
+Midnight: #1c1f2e
+Blue: #2f3543
+Green: #4e615b
+Light Green: #caceb5
+Tan: #ece6da
+
+
+*/
+
+* {
+  font-size: 16px;
+  margin: 0 0;
+  padding: 0, 0;
+  /* background-color: #2f3543; */
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+/* Contact Me*/
+
+#contact-container {
+  margin-top: 1rem;
+  padding-top: 2rem;
+  width: 100vw;
+  background-color: azure;
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.links-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding-top: 1rem;
+  align-items: center;
+}
+
+/* .resume {
+  text-decoration: none;
+  font-size: 2rem;
+  color: white;
+  font-family: "Cormorant", serif;
+  border: 1px solid #4e615b;
+  border-radius: 16px;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: #4e615b;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+} */
+
+.resume {
+  font-family: "Cormorant", serif;
+  color: #4e615b;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.resume:hover {
+  color: lightgray;
+}
+
+.email-address {
+  font-size: 1.5rem;
+  font-family: "Cormorant", serif;
+}
+
+#github {
+  width: 60px;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  background-image: url("/src/Components/BlueWhiteForest.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-height: 700px;
+}
+
+.forest {
+  object-fit: cover;
+}
+
+.landing-name {
+  animation: fadeIn 4s;
+  font-family: "Josefin Slab", serif;
+  font-family: "Cormorant", serif;
+  font-weight: 700;
+  font-size: 2.2rem;
+}
+
+.landing-description {
+  animation: fadeIn 9s;
+  font-family: "Cormorant", serif;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.landing-enter {
+  font-size: 2rem;
+  color: black;
+  font-weight: 800;
+  font-family: "Josefin Slab", serif;
+  font-family: "Cormorant", serif;
+  animation: fadeIn 16s;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+/* Projects Styling */
+
+#projects-container {
+  color: #ece6da;
+  font-size: 1.9rem;
+  /* width: 80vw; */
+  margin-bottom: 3rem;
+  margin-top: 1rem;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Cormorant", serif;
+  background-color: #2f3543;
+  height: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  scroll-behavior: smooth;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  color: black;
+}
+
+#projects-title {
+  color: #ece6da;
+  font-size: 2.7rem;
+  margin-bottom: 4rem;
+  font-family: "Italiana", serif;
+}
+
+#spineify-card {
+  margin-left: 3rem;
+}
+
+#card-title {
+  font-weight: bold;
+  font-size: 1.7rem;
+}
+
+#project-image {
+  /* object-fit: cover; */
+  height: 40vh;
+}
+
+#bells-image {
+  height: 40vh;
+}
+
+#card-button {
+  margin-left: 1rem;
+  background-color: #4e615b;
+  background-color: #caceb5;
+  color: black;
+  border: 1px solid #4e615b;
+}
+
+/* About Me styling 
+
+font-family: 'Cormorant', serif;
+font-family: 'Italiana', serif;
+font-family: 'Josefin Slab', serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Spectral', serif;
+
+*/
+
+#test-container {
+  color: #ece6da;
+  font-size: 1.9rem;
+  width: 80vw;
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+}
+
+#about-me-container {
+  color: #ece6da;
+  font-size: 1.9rem;
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+  text-align: center;
+}
+
+#about-header {
+  margin-top: 7rem;
+  margin-bottom: 4rem;
+  font-size: 2.7rem;
+  font-family: "Italiana", serif;
+}
+
+#about-me-title {
+  font-size: 2rem;
+  font-family: "Cormorant", serif;
+  color: black;
+  padding-bottom: 1rem;
+}
+
+.about-parent {
+  display: flex;
+  padding-left: 2.5rem;
+  max-width: 1300px;
+  justify-content: center;
+}
+
+#about-card {
+  background-color: #2f3543;
+  margin-right: 2rem;
+  border: none;
+}
+
+#about-me-para {
+  color: #ece6da;
+  font-size: 1.5rem;
+  background-color: #2f3543;
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  overflow: scroll;
+  max-height: 432px;
+  text-align: left;
+}
+
+.headshot {
+  width: 27%;
+  border-radius: 5%;
+  min-width: 346px;
+  max-height: 460px;
+}
+
+#navbar-container {
+  font-size: 1.5rem;
+  width: 100%;
+  text-align: end;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-around;
+}
+
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Skills  */
+
+#skills-container {
+  display: flexbox;
+  flex-direction: column;
+  font-family: "Italiana", serif;
+  /* background-color: #2f3543; */
+  color: #ece6da;
+  margin: 1.5rem;
+  font-weight: bold;
+  /* width: 100%; */
+}
+
+.skills-header {
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+
+.skill-list {
+  display: flex;
+  gap: 1.7rem;
+  font-family: "Roboto", sans-serif;
+  align-items: flex-start;
+}
+
+.skill-list li {
+  font-size: 1.5rem;
+  font-weight: 300;
+  list-style: none;
+  text-align: left;
+}
+
+/* Resume */
+
+#resume {
+  font-family: "Italiana", serif;
+  color: #ece6da;
+}
+
+#resume h4,
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+#resume li {
+  font-family: "Roboto", sans-serif;
+  text-align: left;
+  font-weight: 200;
+  font-size: 1.5rem;
+}
+
+/* Education */
+
+#edu-container {
+  color: #ece6da;
+  font-size: 1.9rem;
+  width: 80vw;
+  margin-bottom: 4rem;
+}
+
+#edu-container h2 {
+  color: #ece6da;
+  font-size: 2.7rem;
+  margin-top: 7rem;
+  margin-bottom: 4rem;
+  font-family: "Italiana", serif;
+}
+.education-container {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.education-container li {
+  font-size: 1.3rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  align-self: center;
+  list-style: none;
+}
+
+.education-container p {
+  font-style: italic;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.education-card {
+  width: 27rem;
+}
+
+.Bates_logo {
+  width: 10rem;
+}
+
+.TCS_logo {
+  width: 7rem;
+}
+
+.GH_logo {
+  width: 10rem;
+}
+
+@media (max-width: 1357px) {
+  .about-parent {
+    flex-direction: column;
+  }
+  #about-me-para {
+    font-size: 1.3rem;
+    width: 70vw;
+  }
+  .headshot {
+    align-self: center;
+    padding-top: 1rem;
+  }
+  .card-container {
+    flex-direction: column;
+    gap: 4rem;
+  }
+  #spineify-card {
+    margin: 0;
+  }
+  .education-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  #bells-image {
+    height: auto;
+  }
+  #project-image {
+    height: auto;
+  }
+}
+
+@media (max-width: 650px) {
+  #about-me-para {
+    font-size: 1.2rem;
+    max-height: 950px;
+  }
+  .headshot {
+    min-width: 300px;
+    max-height: 420px;
+  }
+  #project-card {
+    max-width: 350px;
+  }
+  #spineify-card {
+    max-width: 350px;
+  }
+  .card-container {
+    justify-content: center;
+  }
+  .landing-name {
+    font-size: 1.7rem;
+  }
+  .landing-description {
+    font-size: 1.5rem;
+  }
+  .education-card {
+    width: 20rem;
+  }
+}
+
+@media (max-width: 390px) {
+  #about-me-para {
+    font-size: 1.2rem;
+    max-height: 950px;
+  }
+  .headshot {
+    min-width: 300px;
+    max-height: 420px;
+  }
+  #project-card {
+    max-width: 350px;
+  }
+  #spineify-card {
+    max-width: 350px;
+  }
+  .card-container {
+    justify-content: center;
+  }
+  .landing-name {
+    font-size: 1.7rem;
+  }
+  .landing-description {
+    font-size: 1.5rem;
+  }
+  .education-card {
+    width: 20rem;
+  }
+}
